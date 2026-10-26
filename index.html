@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css"/>
+     <script src="script.js"></script>
+</head>
+<body>
+    <header>
+            <h1>Diccionario de Programación</h1>
+            <button onclick="cambiarSesion(this)">Iniciar sesión</button>
+        </header>
+        <main>
+            <button onclick="ocultar(this)">Agregar definición</button>
+            <section class="definicion">
+                <h2>Variable</h2>
+                <p>Espacio con nombre donde un programa guarda un dato para usarlo después.</p>
+                <p><span id="likes-variable">0</span> me gusta</p>
+                <button onclick="meGusta('Variable', 'likes-variable')">Me gusta</button>
+            </section>
+ 
+            <section class="definicion">
+                <h2>Función</h2>
+                <p>Bloque de código con nombre que realiza una tarea y se puede usar muchas veces.</p>
+                <p><span id="likes-funcion">0</span> me gusta</p>
+                <button onclick="meGusta('Función', 'likes-funcion')">Me gusta</button>
+            </section>
+ 
+            <section class="definicion">
+                <h2>Evento</h2>
+                <p>Algo que ocurre en la página, como un clic, y que el programa puede detectar.</p>
+                <p><span id="likes-evento">0</span> me gusta</p>
+                <button onclick="meGusta('Evento', 'likes-evento')">Me gusta</button>
+            </section>
+        </main>
+</body>
+</html>

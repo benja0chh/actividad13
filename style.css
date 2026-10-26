@@ -1,0 +1,52 @@
+:root {
+    --azul: #004aad;
+    --celeste: #1180d2;
+    --fondo: #f2f6fa;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: #2a2a2a;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--azul);
+    color: white;
+}
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--celeste);
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--azul);
+}
+.definicion {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.definicion h2 {
+    color: var(--azul);
+}
+.definicion p {
+    margin: 10px 0;
+}
